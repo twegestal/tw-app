@@ -19,14 +19,18 @@ npm run dev
 | `npm run lint`    | Lint the project                    |
 | `npm run format`  | Format the project with Prettier    |
 
+## Deployment
+
+Set `VITE_SITE_URL` in `.env` to the public URL of the site (without a trailing slash), so link previews on LinkedIn and other platforms can resolve the share image.
+
 ## Structure
 
 ```
 src/
-  content/     Profile, sections and tech stack data
+  content/     Profile, experience, projects and tech stack data
   components/  Reusable UI components
   sections/    Page sections composed from components
   hooks/       Custom React hooks
 ```
 
-Technologies are listed in `src/content/techStack.ts`.
+Experience, projects and technologies are edited in `src/content/`.

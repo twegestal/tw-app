@@ -1,5 +1,5 @@
 import '@fontsource-variable/inter';
-import '@mantine/core/styles.css';
+import './mantine.css';
 import './global.css';
 
 import { MantineProvider } from '@mantine/core';

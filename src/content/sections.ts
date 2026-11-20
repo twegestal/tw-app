@@ -1,5 +1,7 @@
 export const sectionLabels = {
   about: 'About',
+  experience: 'Experience',
+  projects: 'Projects',
   'tech-stack': 'Tech stack',
 } as const;
 

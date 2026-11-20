@@ -1,0 +1,15 @@
+@import '@mantine/core/styles/baseline.css';
+@import '@mantine/core/styles/default-css-variables.css';
+@import '@mantine/core/styles/global.css';
+@import '@mantine/core/styles/UnstyledButton.css';
+@import '@mantine/core/styles/Loader.css';
+@import '@mantine/core/styles/ActionIcon.css';
+@import '@mantine/core/styles/Anchor.css';
+@import '@mantine/core/styles/Badge.css';
+@import '@mantine/core/styles/Container.css';
+@import '@mantine/core/styles/Group.css';
+@import '@mantine/core/styles/Popover.css';
+@import '@mantine/core/styles/Stack.css';
+@import '@mantine/core/styles/Text.css';
+@import '@mantine/core/styles/Title.css';
+@import '@mantine/core/styles/Tooltip.css';
