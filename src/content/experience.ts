@@ -28,7 +28,7 @@ export const experience: Experience[] = [
     ],
   },
   {
-    period: 'Sep — Nov 2024',
+    period: 'Sep — Nov 2023',
     role: 'Intern',
     organization: { name: 'Devoteam', url: 'https://www.devoteam.com/' },
   },
