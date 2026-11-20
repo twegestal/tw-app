@@ -1,0 +1,28 @@
+.layout {
+  display: grid;
+  gap: 4rem;
+  padding-block: 6rem 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 62em) {
+  .layout {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 5rem;
+    padding-block: 0;
+  }
+
+  .content {
+    padding-block: 6rem 2rem;
+  }
+}

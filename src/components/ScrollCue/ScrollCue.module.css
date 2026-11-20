@@ -1,0 +1,61 @@
+.cue {
+  --shift: -8px;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-radius: var(--mantine-radius-md);
+  color: var(--tw-heading);
+  text-decoration: none;
+}
+
+.cue[data-direction='up'] {
+  --shift: 8px;
+
+  flex-direction: column-reverse;
+}
+
+.label {
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.cue[data-direction='down'] .icon {
+  animation: nudge 2.4s ease-in-out infinite;
+}
+
+.cue:hover .label,
+.cue:focus-visible .label {
+  opacity: 1;
+}
+
+.cue:hover .icon,
+.cue:focus-visible .icon {
+  transform: translateY(var(--shift));
+  animation-play-state: paused;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cue[data-direction='down'] .icon {
+    animation: none;
+  }
+}

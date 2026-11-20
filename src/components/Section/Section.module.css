@@ -1,0 +1,18 @@
+.section {
+  scroll-margin-top: 2rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tw-accent);
+}
+
+@media (min-width: 62em) {
+  .section {
+    scroll-margin-top: 6rem;
+  }
+}

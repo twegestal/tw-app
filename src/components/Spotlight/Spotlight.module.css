@@ -1,0 +1,35 @@
+.spotlight,
+.spotlight::after {
+  --position: var(--spotlight-x, 50vw) var(--spotlight-y, 50vh);
+
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.spotlight {
+  z-index: 50;
+  background: radial-gradient(
+    340px circle at var(--position),
+    transparent 0%,
+    rgb(0 0 0 / 0.25) 55%,
+    rgb(0 0 0 / 0.45) 100%
+  );
+}
+
+.spotlight::after {
+  content: '';
+  opacity: 0.6;
+  mix-blend-mode: screen;
+  background: radial-gradient(
+    160px circle at var(--position),
+    rgb(255 255 255 / 0.07),
+    transparent 60%
+  );
+}
+
+@media (hover: none), (pointer: coarse) {
+  .spotlight {
+    display: none;
+  }
+}

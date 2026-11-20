@@ -1,0 +1,37 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--tw-heading);
+}
+
+.role {
+  margin-top: 0.75rem;
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 500;
+  color: var(--tw-heading);
+}
+
+.tagline {
+  max-width: 22rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: var(--mantine-color-dimmed);
+}
+
+@media (min-width: 62em) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 100svh;
+    padding-block: 6rem;
+  }
+}

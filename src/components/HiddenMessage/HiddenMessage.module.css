@@ -1,0 +1,27 @@
+.message {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: var(--mantine-font-size-sm);
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--tw-accent);
+  mask-image: radial-gradient(
+    circle 120px at var(--reveal-x, -100vw) var(--reveal-y, -100vh),
+    #000 25%,
+    transparent 100%
+  );
+}
+
+.message:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.message:focus-visible {
+  mask-image: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .message {
+    display: none;
+  }
+}
